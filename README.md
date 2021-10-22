@@ -33,17 +33,55 @@ Beispiele für Kosten:
 - Maschinen
 - Reisekosten
 - Kosten für Weiterbildung
+- Private Altersvorsorge
+- Steuerberater/-software
+
+
+Altersvorsorge: https://gruenderplattform.de/unternehmen-gruenden/altersvorsorge-selbststaendige
+
+Berufsständische Versorgungswerke
+Basis-Rente (Rürup)
+Gesetzliche Rentenversicherung
+Private Rentenversicherung
+Immobilien
+
 
 **Steuern**
 Freiberufler sind Einkommensteuerpflichtig. Die Höhe der Steuerzahlungen richtet sich nach der Höhe des Einkommens.
 
 Berechnung der Einkommensteuer: https://www.bmf-steuerrechner.de/ekst/eingabeformekst.xhtml
 
-**Sozialversicherung (Versicherungskosten)**
+**Versicherungskosten**
+Gänige Versicherungen
+- Krankenversicherung -> Privat oder freiwillig gesetzlich
+- Berufsunfähigkeitsversicherung ->
+- Private Altersvorsorge ->
+- Berufshaftpflich -> 
+- Vermögensschaden-Haftpflichtversicherung -> Wenn Auftraggaber finanzieller Schaden durch dich entsteht.
+- Rechtsschutzversicherung -> Streitigkeiten mit Auftrageber.
+- Inhaltsversicherung -> Hardware gegen Schäden und Diebstahl versichern.
+- Cyberschutzversicherung -> Absicherung gegen Datenverlust, Hacking,... .
 
+## Beispielrechnung
 
+Stundensatz 70,00€ (Netto)
+Arbeitstage 205
 
+Jahresumsatz 70,00€ * 8Stunden * 205Tage = 114.800,00€ Netto
+Kosten (Miete, Altersvorsorge, Sonstiges) = 500,00€ * 12 Monate = 6.000,00€
+Zu versteuernedes Einkommen = 114.800,00€ - 6.000,00€ = 108.800,00€
+Einkommenssteuer = 108.800,00€ - 27.474,00€ ->  81.326,00€
+Versicherungskosten = 910,00€ (KV, 2Kinder) + 100,00€ BU + 150,00€ Sonstige -> 13.920,00€ -> 67.406,00€
 
+## Portale
+
+||Name||Link||Bermerkung
+|Uplink|https://uplink.tech/||
+|Freelancermap|https://www.freelancermap.de/||
+|Gulp|https://www.gulp.de/||
+|Freelance.de|https://www.freelance.de/||
+|Freelancer.de|https://www.freelancer.de/||
+|Solcom|https://www.solcom.de/de/projektportal||
 
 
 
