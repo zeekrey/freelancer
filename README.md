@@ -1,4 +1,5 @@
 # Freelancer
+
 👨‍🔧 My notes on freelancer work
 
 Berechnung Arbeitstage
@@ -28,6 +29,7 @@ Zunächst werden Kosten abgezogen. Diese schmälern den zu versteuernden Betrag,
 **Kosten (Betriebsausgaben)**
 Umsatz - Kosten = Gewinn
 Beispiele für Kosten:
+
 - Miete
 - Büromaterial
 - Maschinen
@@ -35,7 +37,6 @@ Beispiele für Kosten:
 - Kosten für Weiterbildung
 - Private Altersvorsorge
 - Steuerberater/-software
-
 
 Altersvorsorge: https://gruenderplattform.de/unternehmen-gruenden/altersvorsorge-selbststaendige
 
@@ -45,7 +46,6 @@ Gesetzliche Rentenversicherung
 Private Rentenversicherung
 Immobilien
 
-
 **Steuern**
 Freiberufler sind Einkommensteuerpflichtig. Die Höhe der Steuerzahlungen richtet sich nach der Höhe des Einkommens.
 
@@ -53,10 +53,11 @@ Berechnung der Einkommensteuer: https://www.bmf-steuerrechner.de/ekst/eingabefor
 
 **Versicherungskosten**
 Gänige Versicherungen
+
 - Krankenversicherung -> Privat oder freiwillig gesetzlich
 - Berufsunfähigkeitsversicherung ->
 - Private Altersvorsorge ->
-- Berufshaftpflich -> 
+- Berufshaftpflich ->
 - Vermögensschaden-Haftpflichtversicherung -> Wenn Auftraggaber finanzieller Schaden durch dich entsteht.
 - Rechtsschutzversicherung -> Streitigkeiten mit Auftrageber.
 - Inhaltsversicherung -> Hardware gegen Schäden und Diebstahl versichern.
@@ -67,23 +68,19 @@ Gänige Versicherungen
 Stundensatz 70,00€ (Netto)
 Arbeitstage 205
 
-Jahresumsatz 70,00€ * 8Stunden * 205Tage = 114.800,00€ Netto
-Kosten (Miete, Altersvorsorge, Sonstiges) = 500,00€ * 12 Monate = 6.000,00€
+Jahresumsatz 70,00€ _ 8Stunden _ 205Tage = 114.800,00€ Netto
+Kosten (Miete, Altersvorsorge, Sonstiges) = 500,00€ \* 12 Monate = 6.000,00€
 Zu versteuernedes Einkommen = 114.800,00€ - 6.000,00€ = 108.800,00€
-Einkommenssteuer = 108.800,00€ - 27.474,00€ ->  81.326,00€
+Einkommenssteuer = 108.800,00€ - 27.474,00€ -> 81.326,00€
 Versicherungskosten = 910,00€ (KV, 2Kinder) + 100,00€ BU + 150,00€ Sonstige -> 13.920,00€ -> 67.406,00€
 
 ## Portale
 
-||Name||Link||Bermerkung
-|Uplink|https://uplink.tech/||
-|Freelancermap|https://www.freelancermap.de/||
-|Gulp|https://www.gulp.de/||
-|Freelance.de|https://www.freelance.de/||
-|Freelancer.de|https://www.freelancer.de/||
-|Solcom|https://www.solcom.de/de/projektportal||
-
-
-
-
-
+| Name          | Link                                   | Bermerkung |
+| ------------- | -------------------------------------- | ---------- |
+| Uplink        | https://uplink.tech/                   |            |
+| Freelancermap | https://www.freelancermap.de/          |            |
+| Gulp          | https://www.gulp.de/                   |            |
+| Freelance.de  | https://www.freelance.de/              |            |
+| Freelancer.de | https://www.freelancer.de/             |            |
+| Solcom        | https://www.solcom.de/de/projektportal |            |
