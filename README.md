@@ -1,6 +1,6 @@
-# Freelancer
+# My Freelancer Field Report
 
-👨‍🔧 My notes on freelancer work
+> 💡 The following is some sort of field report for freelancers. Since a lot of this stuff only applies to the German market, this report is initially only available in German. Feel free to request an other language or ideally submit a PR.
 
 Berechnung Arbeitstage
 
@@ -16,7 +16,7 @@ Berechnung Arbeitstage
 Netto -> Rein, Anteil am Gesamten
 Brutto -> Unrein, das Gesamte
 
-Stundenlöhne werden meistens _ohne_ Umsatzsteuer (Netto) angegeben. Diese sind aber anzurechnen. Ist der Stundensatz ohne Umsatzsteuer 90,00€ (Netto) ist der eigentliche Rechnungsbetragen 107,10€ (Brutto, 90,00€ + 19%).
+Stundenlöhne werden meistens _ohne_ Umsatzsteuer (Netto) angegeben. Diese ist aber anzurechnen (wenn man kein Gebrauch von der Kleinunternehmerregelung macht). Ist der Stundensatz ohne Umsatzsteuer 90,00€ (Netto) ist der eigentliche Rechnungsbetragen 107,10€ (Brutto, 90,00€ + 19%).
 Umsatzsteuer die man in Rechnung stellt (also bekommt) nennt man **Umsatzsteuer**. Umsatzsteuer die man selbst bezahlt (also ausgibt) nennt man **Vorsteuer**. Vorsteuer und Umsatzsteuer werden miteinander verrechnet.
 
 **Soll-Besteuerung** -> Die Umsatzsteuer wird mit Rechnungstellung fällig.
@@ -84,3 +84,19 @@ Versicherungskosten = 910,00€ (KV, 2Kinder) + 100,00€ BU + 150,00€ Sonstig
 | Freelance.de  | https://www.freelance.de/              |            |
 | Freelancer.de | https://www.freelancer.de/             |            |
 | Solcom        | https://www.solcom.de/de/projektportal |            |
+
+## Anheuer-Prozess
+
+1. Sobald Profile auf den oben stehenden Portalen erstellt wurde rufen regelmäßig Personalvermittler an. Das Telefon klingt bei mir im Schnitt täglich oder alle 2 Tage. Es macht daher eine Sinn eine neue Telefonnummer spezielle für solche Anfragen zu kaufen. Beispielsweise eine Prepaid-Nummer. In den meisten Smartphones kann man mittlerweile 2 Simkarten verwenden.
+2. Diese fragen nach der grundsätzlichen Verfügbarkeit und gleichen dann Skills für das gesuchte Profil ab. Es handelt sich tatsächlich nur um einen ersten Abgleich. Oft wird man bspw. gefragt: "Auf eine Skala von 1 - 10, wobei 10 sehr gut ist: Wie gut sind Ihre Typescript Skills?" Oft muss die Bewertung nicht validiert werden, es macht aber Sinn hier nach bestem Gewissen zu antworten da die Anforderungen natürlich vom eigenentlichen Auftraggeber kommen.
+3. Passt das alles wird der Lebenslauf an den Auftraggeber gesendet. Dabei setzen viele Personalfirmen eigene Tools/Vorlagen ein. Daher macht es oft Sinn sich beim Lebenslauf an gängige Standards zu halten (Inhalt - klassischer Werdegang, Format - PDF, Docx o.ä.).
+
+Hier sind Daten aus 30 Tagen (Oktober 2021):
+
+| Stage                       | Absolute | Quote   |
+| --------------------------- | -------- | ------- |
+| Anrufe                      | 10       | 100,00% |
+| CV vorgestellt              | 7        | 70,00%  |
+| Interview I (evtl. auch II) | 4        | 57,14%  |
+| Auftrag                     | 1        | 25,00%  |
+
