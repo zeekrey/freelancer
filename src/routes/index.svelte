@@ -6,18 +6,22 @@
 	let insuranceCosts: number = 600 * 12;
 	let incomeTax: number = 0;
 
+	let billingBasis: 'daylie' | 'hourly' = 'hourly';
+
+	$: calculatedSalary = billingBasis === 'hourly' ? workHours * salary : salary;
+
 	$: daylieTurnover = new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'EUR' }).format(
-		workHours * salary
+		calculatedSalary
 	);
 	$: yearlyTurnover = new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'EUR' }).format(
-		workHours * salary * workDays
+		calculatedSalary * workDays
 	);
 	$: incomeBeforeTax = new Intl.NumberFormat('de-DE', {
 		style: 'currency',
 		currency: 'EUR'
-	}).format(workHours * salary * workDays - businessCosts);
+	}).format(calculatedSalary * workDays - businessCosts);
 	$: income = new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'EUR' }).format(
-		workHours * salary * workDays - businessCosts - incomeTax - insuranceCosts
+		calculatedSalary * workDays - businessCosts - incomeTax - insuranceCosts
 	);
 </script>
 
@@ -28,24 +32,49 @@
 	<legend>User input</legend>
 
 	<label for="workDays">Arbeitstage im Jahr</label>
-	<input type="number" min="0.00" step="0.01" bind:value={workDays} id="workDays" />
+	<input type="number" min="0" step="1" bind:value={workDays} id="workDays" />
 	<details>
 		Im Durchschnitt arbeitet ein/e Deutsche/r 198Tage im Jahr. Von 365 Kalendertagen sind
 		beispielsweise folgende Tage abzuziehen: 104 Tage Wochenende 📅, 11 Feiertage 🎉, 14 krank 🤒,
 		10 Tage 👨‍🍼🤱, 28 Urlaub 🌴 = 198 Tage
 	</details>
 
-	<label for="workHours">Arbeitsstunden pro Tag</label>
-	<input type="number" bind:value={workHours} id="workHours" />
-	<details>
-		Du solltest vor Antritt deiner Tätigkeit dringend klären wie viele Wochenstunden von dir
-		erwartet werden bzw. du in abrufen kannst. Bei einem Vollzeit-Job kannst du mit 38 bis 40
-		Stunden pro Woche rechnen.
-	</details>
+	<div>Abrechnungsmodell</div>
+	<div style="display: flex; gap: 15px">
+		<label
+			><input
+				type="radio"
+				name="billingBasis"
+				bind:group={billingBasis}
+				value="hourly"
+			/>Stündlich</label
+		>
+		<label
+			><input
+				type="radio"
+				name="billingBasis"
+				bind:group={billingBasis}
+				value="daylie"
+			/>Täglich</label
+		>
+	</div>
 
-	<label for="salary">Stundenlohn (netto)</label>
-	<input type="number" bind:value={salary} id="salary" />
-	<details>Stundenlohn ohne Umsatzsteuer.</details>
+	{#if billingBasis === 'hourly'}
+		<label for="workHours">Arbeitsstunden pro Tag</label>
+		<input type="number" min="0" step="0.1" bind:value={workHours} id="workHours" />
+		<details>
+			Du solltest vor Antritt deiner Tätigkeit dringend klären wie viele Wochenstunden von dir
+			erwartet werden bzw. du in abrufen kannst. Bei einem Vollzeit-Job kannst du mit 38 bis 40
+			Stunden pro Woche rechnen.
+		</details>
+	{/if}
+
+	<label for="salary">{billingBasis === 'hourly' ? 'Stundenlohn' : 'Tageslohn'}(netto)</label>
+	<input type="number" min="0" step="0.01" bind:value={salary} id="salary" />
+	<details>
+		{billingBasis === 'hourly' ? 'Stundenlohn' : 'Tageslohn'} ohne Umsatzsteuer. Davon ist meistens die
+		Rede wenn über den {billingBasis === 'hourly' ? 'Stundenlohn' : 'Tageslohn'} gesprochen wird.
+	</details>
 
 	<label for="businessCosts">Betriebsausgeben pro Jahr</label>
 	<input type="number" bind:value={businessCosts} id="businessCosts" />

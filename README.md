@@ -128,3 +128,13 @@ Umsatzsteuer die man in Rechnung stellt (also bekommt) nennt man **Umsatzsteuer*
 
 **Soll-Besteuerung** -> Die Umsatzsteuer wird mit Rechnungstellung fällig.
 **Ist-Besteuerung** -> Die Umsatzsteuer wird bei Geldeingang fällig.
+
+# ToDos
+
+- [x] Auswahl zwischen Stunden- und Tageslohn
+- [] Betriebsausgaben als Summe, tabellarisch erfassen oder als Formel erfassen
+- [] Einkommenssteuer von API abrufen
+- [] Versicherungskosten beispielhaft von einer API holen? Oder Beispiele anzeigen
+- [] Einkommen jährlich und monatlich anzeigen
+- [] Währungseingaben als solche formatieren
+- [] Eingaben Clientseitig cachen
