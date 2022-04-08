@@ -2,11 +2,18 @@
 	let workDays: number = 198;
 	let workHours: number = 7.5;
 	let salary: number = 50;
-	let businessCosts: number = 200 * 12;
 	let insuranceCosts: number = 600 * 12;
 	let incomeTax: number = 0;
 
 	let billingBasis: 'daylie' | 'hourly' = 'hourly';
+	let businessCostsItems = [
+		{
+			name: 'Item #1',
+			amount: 100
+		}
+	];
+
+	$: businessCosts = businessCostsItems.reduce((prev, { amount }) => prev + amount, 0);
 
 	$: calculatedSalary = billingBasis === 'hourly' ? workHours * salary : salary;
 
@@ -78,6 +85,26 @@
 
 	<label for="businessCosts">Betriebsausgeben pro Jahr</label>
 	<input type="number" bind:value={businessCosts} id="businessCosts" />
+	<table>
+		<tr
+			><th>Betriebsausgabe</th>
+			<th>Betrag (jährlich)</th></tr
+		>
+		{#each businessCostsItems as item}
+			<tr>
+				<td><input type="text" name="" id="" bind:value={item.name} /></td>
+				<td><input type="number" name="" id="" bind:value={item.amount} /></td>
+			</tr>{/each}
+	</table>
+	<button
+		on:click={() => {
+			businessCostsItems.push({
+				name: 'Item #1',
+				amount: 100
+			});
+			businessCostsItems = businessCostsItems;
+		}}>Betriebsausgabe hinzufügen</button
+	>
 	<details>
 		Als Betriebsausgaben werden Kosten bezeichnet, die du hast um deine Arbeit auszuführen. Bist du
 		Software Entwickler? Dann brauchst du wahrscheinlich einen Computer. Aber auch Reisemittel sind
