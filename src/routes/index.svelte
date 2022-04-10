@@ -8,8 +8,8 @@
 	let billingBasis: 'daylie' | 'hourly' = 'hourly';
 	let businessCostsItems = [
 		{
-			name: 'Item #1',
-			amount: 100
+			name: 'Software Lizenzen (Office, eMail, ...)',
+			amount: 12 * 25
 		}
 	];
 
