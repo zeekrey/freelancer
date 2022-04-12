@@ -1,11 +1,11 @@
 import { XMLParser } from 'fast-xml-parser';
+import type { RequestHandler } from '@sveltejs/kit';
 
 const parser = new XMLParser({
 	ignoreAttributes: false
 });
 
-/**@type {import('@sveltejs/kit').RequestHandler} */
-export async function get({ request }) {
+export const get: RequestHandler = async ({ request }) => {
 	/**
 	 * As defined here: https://www.bmf-steuerrechner.de/interface/einganginterface.xhtml
 	 * The XML reponse is defined here: https://www.bmf-steuerrechner.de/javax.faces.resource/daten/xmls/Lohnsteuer2022.xml.xhtml
@@ -31,6 +31,7 @@ export async function get({ request }) {
 	);
 
 	return {
+		status: 200,
 		body: { lstlzz }
 	};
-}
+};

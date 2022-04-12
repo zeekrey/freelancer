@@ -1,4 +1,6 @@
 <script lang="ts">
+	const TAXAPI = '/api/incomeTax';
+
 	let workDays: number = 198;
 	let workHours: number = 7.5;
 	let salary: number = 50;
@@ -30,6 +32,15 @@
 	$: income = new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'EUR' }).format(
 		calculatedSalary * workDays - businessCosts - incomeTax - insuranceCosts
 	);
+
+	const getTaxHandler = async () => {
+		const RE4 = (calculatedSalary * workDays - businessCosts) * 100; //needs to be converted to EUR-Cents
+		const STKL = '1'; // ToDo: "Steuerklasse" could be implemented
+
+		const res = await fetch(`${TAXAPI}?RE4=${RE4}&STKL=${STKL}`);
+		const { lstlzz } = await res.json();
+		incomeTax = lstlzz / 100; //needs to be converted to EUR
+	};
 </script>
 
 <h1>Welcome to SvelteKit</h1>
@@ -112,6 +123,7 @@
 	</details>
 
 	<label for="incomeTax">Income Tax</label>
+	<button on:click={getTaxHandler}>Steuer berechnen</button>
 	<input type="number" bind:value={incomeTax} id="incomeTax" />
 	<details>
 		Auf deine Einnahmen abzüglich Betriebskosten musst du Einkommenssteuer bezahlen.

@@ -1,6 +1,6 @@
-import { cleanup, render } from '@testing-library/svelte';
-import { afterEach, it, expect, describe } from 'vitest';
+import { afterEach, it, expect, describe, beforeAll, afterAll } from 'vitest';
 import http from 'http';
+import { server } from '../mocks/server';
 
 const request = (path: string) =>
 	new Promise((resolve) => {
@@ -12,7 +12,11 @@ const request = (path: string) =>
 	});
 
 describe('API / incomeTax', () => {
-	// afterEach(() => cleanup());
+	beforeAll(() => server.listen());
+
+	afterEach(() => server.resetHandlers());
+
+	afterAll(() => server.close());
 
 	it('should work', async () => {
 		const RE4 = '2500000';
